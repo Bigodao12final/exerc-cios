@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Placar de Vôlei</title>
+  <link rel="stylesheet" href="placar.css">
+</head>
+<body>
+
+<header>
+  <h1>🏐 Placar de Vôlei</h1>
+</header>
+
+<div class="placar">
+
+  <div class="time" id="timeA">
+    <input type="text" value="Time A" class="nome">
+    <h2 id="pontosA">0</h2>
+    <p>Sets: <span id="setsA">0</span></p>
+    <button onclick="addPonto('A')">+ Ponto</button>
+    <button onclick="removerPonto('A')">- Ponto</button>
+    <button onclick="setSaque('A')">Saque</button>
+  </div>
+
+  <div class="info">
+    <h2>VS</h2>
+
+    <h3 id="tempo">00:00</h3>
+    <p>Saque: <span id="saque">Nenhum</span></p>
+
+    <button onclick="iniciarTempo()">Iniciar</button>
+    <button onclick="pausarTempo()">Pausar</button>
+    <button onclick="resetarTempo()">Reset Tempo</button>
+
+    <button onclick="resetSet()">Reset Set</button>
+    <button onclick="resetJogo()">Reset Jogo</button>
+  </div>
+
+  <div class="time" id="timeB">
+    <input type="text" value="Time B" class="nome">
+    <h2 id="pontosB">0</h2>
+    <p>Sets: <span id="setsB">0</span></p>
+    <button onclick="addPonto('B')">+ Ponto</button>
+    <button onclick="removerPonto('B')">- Ponto</button>
+    <button onclick="setSaque('B')">Saque</button>
+  </div>
+
+</div>
+
+<footer>
+  <p>Desenvolvido por Renan 😎</p>
+</footer>
+
+<script src="placar.js"></script>
+</body>
+</html>
